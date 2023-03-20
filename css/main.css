@@ -1,0 +1,92 @@
+body{
+  background: black;
+  margin: auto;
+  box-sizing: border-box;
+ 
+}
+
+#b-nosotros{
+  background-color: white;
+}
+
+
+/* Quitar formato de link */
+a:link { 
+  text-decoration: none;
+  
+  
+}
+a:visited {
+text-decoration: none;
+
+}
+.imgn-md{
+  color: rgb(139, 212, 212);
+}
+
+/* breack point - md */
+@media (min-width:768px){
+  .row--index{
+    height: 100vh;
+  }
+  .imgn-md{
+    
+    margin: 3px
+  }
+
+  .logo--md{
+    margin-top: 20px;
+  }
+
+  .nav-md{
+    background-color: aqua;
+    margin-top: 200px;
+    border-color: black;
+    border-radius: 5%;
+  }
+
+  #div-servicios{
+    
+    background-image: url(/assets/diseno\ 5.jpg);
+    opacity: 80%;
+    overflow: hidden;
+    height: 100vh;
+    
+    
+  }
+
+
+
+  #div-nosotros{
+    
+    background-image: url(/assets/manzana\ 1.jpg);
+    opacity: 80%;
+    overflow: hidden;
+    height: 100vh;
+    
+    
+  }
+
+  #div-productos{
+    
+    background-image: url(/assets/Mold\ Design\ &\ Fabricate.jpg);
+    opacity: 80%;
+    overflow: hidden;
+    height: 100vh;
+  
+    
+  }
+
+  #div-contacto{
+    
+    background-image: url(/assets/Operadora\ 2.jpg);
+    opacity: 80%;
+    overflow: hidden;
+    height: 100vh;
+    
+    
+  }
+
+
+
+}
