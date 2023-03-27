@@ -1,92 +1,436 @@
-body{
-  background: black;
-  margin: auto;
-  box-sizing: border-box;
- 
-}
-
-#b-nosotros{
-  background-color: white;
-}
-
 
 /* Quitar formato de link */
 a:link { 
-  text-decoration: none;
-  
-  
+    text-decoration: none;
+    color: turquoise;
 }
 a:visited {
-text-decoration: none;
-
-}
-.imgn-md{
-  color: rgb(139, 212, 212);
+    text-decoration: none;
+    color: turquoise;
 }
 
-/* breack point - md */
-@media (min-width:768px){
-  .row--index{
-    height: 100vh;
-  }
-  .imgn-md{
+@media (min-width:400px)
+{
+    /* .container--nav_bar_movil, */
+    .container--carousel,
+    .container--botones_texto, #barra_index
+    /* .container--footer*/ { 
+
+        display: none !important;
+
+   } 
+}
+
+.container--footer{
+    box-sizing: border-box;
+    height: 50px;
+    background-color: turquoise;
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-radius: 0 0 10px 10px;
     
-    margin: 3px
-  }
+    
+}
 
-  .logo--md{
+
+.container--footer img{
+height: 70%;
+width: auto;
+margin: 8px;  
+
+}
+
+.botones-movil{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 5px;
+}
+
+.botones-movil  button {
+    
+    margin: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid;
+    border-color: turquoise ;
+    width: 50%;
+    height: 30px; 
+    color: turquoise;
+   
+
+
+}
+
+.container--botones_texto{
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  border: 2px solid;
+  border-color: turquoise;
+  border-radius: 20px 20px 0 0 ;
+    
+}
+
+.imagen_texto-movil{
+    width: 50%;
+    padding: 5px;
+    
+
+    
+}
+
+.imagen_texto-movil--imagen{
+
+    width: 100%;
+    height:60%;
+    overflow: hidden;
+    padding: 2px;
+    border-radius: 30px;
+}
+
+.imagen_texto-movil--imagen img{
+
+    width: 100%;
+    height: 100%;
+}
+
+.imagen_texto-movil--texto{
+
+    width: 100%;
+    height: auto;
+    padding: 2px;
+    text-align: center;
+    color: rgb(226, 226, 226)
+    
+    
+
+}
+
+
+/* Barra navegación móvil */
+
+.container--nav_bar_movil{
+
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    border: 2px solid;
+    border-color: turquoise;
+    border-radius: 10px ;
+    margin-top: 10px;
+    z-index: 1;
+    
+}
+
+.container--nav_bar_movil--logo{
+
+    width: 20%;
+    height: 100%;
+    justify-content: center;
+
+}
+
+.container--nav_bar_movil--logo img{
+
+    height: 100%;
+    padding: 5px;
+    
+}
+
+.container--nav_bar_movil-barra{
+    width: 100%;
+    
+    
+}
+
+#container--nav_bar_movil-barra {
+
+    width: 100%;
+    height: 100%;
+    background-color: transparent !important;
+    color: turquoise !important;
+    
+}
+
+#links--navbar_movil{
+
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+/* Carrusel de fotos con texto */
+
+.container--carousel{
+
+    width: 100%;
+    height: 50vh;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: 2px solid;
+    border-color: turquoise;
+    
+
+
+}
+
+.img-carrusel img{
+
+    height: 100%;
+    width:100% ;
+    overflow: hidden;
+}
+
+.txt-carrusel {
+
+    color: rgb(11, 148, 135);
+    
+}
+
+.imgs-carrusel{
+
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0 !important;
+    margin: 0 !important;
+    
+}
+
+
+/* pantallas grandes */
+
+@media (max-width:400px){
+
+    body{
+        /* overflow: hidden; */
+        padding: 5px;
+    }
+
+    .barra, .barra-tabs {
+        display:none !important;
+
+
+    }   
+
+}
+
+.barra{   
+    border-radius: 20px;
+    border: 2px solid;
+    border-color: turquoise;
+    padding: 5px;
+    display: flex;
+    flex-direction:column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 98vh;       
+
+}
+
+.barra-tabs{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    height: 98vh;
+    
+    
+}
+
+.container--barra_lateral--logo{
+
+    width: 100%; 
+    
+}
+
+.container--barra_lateral--logo img{
+
+    width: 100%;
+    padding: 5px;
     margin-top: 20px;
-  }
 
-  .nav-md{
-    background-color: aqua;
-    margin-top: 200px;
-    border-color: black;
-    border-radius: 5%;
-  }
+}
 
-  #div-servicios{
+.container--barra_lateral--botones{
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+}
+
+
+.container--barra_lateral--botones button{
+
+    margin: 10px 0px 10px 0;
+    padding: 0;   
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid;
+    border-color: turquoise ;    
+    height: 50px; 
+    color: turquoise;
+
+}
+
+.container--barra_lateral--footer{
+    box-sizing: border-box;
+    height: 50px;
+    background-color: turquoise;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;    
+    width: 100%;   
     
-    background-image: url(./assets/diseno\ 5.jpg);
-    opacity: 80%;
+
+}
+
+.container--barra_lateral--footer img{
+
+    height: 70%;
+    width: auto;
+    margin: 8px;
+    
+}
+
+.barra-tabs div{
+   
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-right: 2px solid;
+    border-color: turquoise;
+    padding: 5px;
+    height: 100%;
+    box-sizing: border-box;
+   
+    
+}
+
+
+/* Estilos page - Servicios */
+
+.img_texto{
+
+    margin-top: 20px;
+    height: 60vh;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    
+
+}
+
+.img_debajo_barra{
+
+    border-radius: 10px !important;
+    border: 2px solid !important;
+    border-color: turquoise !important ;
+    color: rgb(0, 160, 144) !important;
+    height: 100%;
+    /* width: 100%; */
     overflow: hidden;
-    height: 100vh;
-    
-    
-  }
 
+}
 
+.img_debajo_barra img{
 
-  #div-nosotros{
     
-    background-image: url(./assets/manzana\ 1.jpg);
-    opacity: 80%;
+    width: 100%;
+    height: 100%;
+
+}
+
+.tarjetas{
+
+    width: 100%;
+    height: 40%;
+    margin: 30px 0 0 0 ;
+    padding: 0;
     overflow: hidden;
-    height: 100vh;
-    
-    
-  }
-
-  #div-productos{
-    
-    background-image: url(./assets/Mold\ Design\ &\ Fabricate.jpg);
-    opacity: 80%;
-    overflow: hidden;
-    height: 100vh;
-  
-    
-  }
-
-  #div-contacto{
-    
-    background-image: url(./assets/Operadora\ 2.jpg);
-    opacity: 80%;
-    overflow: hidden;
-    height: 100vh;
-    
-    
-  }
-
 
 
 }
+
+.tarjetas--cuadro {
+
+    
+    border-radius: 10px !important;
+    border: 2px solid !important;
+    border-color: turquoise !important ;
+    color: rgb(0, 160, 144) !important;
+    height: 100% !important;
+
+}
+
+/* Estilos page - Contacto */
+
+.formulario{
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    margin-top: 10px;
+    border-radius: 10px !important;
+    border: 2px solid !important;
+    border-color: turquoise !important ;
+    color: rgb(0, 160, 144) !important;
+}
+
+.formulario--img img{
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 576px){
+    .formulario{
+        justify-content: center;
+    }
+}
+
+.container--nav{
+    
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.container--nav--tabs{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+/* Estilos page - productos */
+.encabezado{
+
+    border-radius: 10px !important;
+    border: 2px solid !important;
+    border-color: turquoise !important ;
+    color: rgb(0, 160, 144) !important;
+}
+
+.card{
+    border-radius: 10px !important;
+    border: 2px solid !important;
+    border-color: turquoise !important ;
+    color: rgb(0, 160, 144) !important;
+}
+
+
